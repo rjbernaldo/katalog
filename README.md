@@ -1,4 +1,4 @@
-# katalog
+# `katalog`
 A personal collection of code katas I enjoyed solving
 
 ## What is a Code Kata?

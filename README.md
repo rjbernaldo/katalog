@@ -1,2 +1,2 @@
 # `katalog`
-A reviewer for learning computer science concepts
+Reviewer for learning computer science concepts

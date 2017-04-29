@@ -1,2 +1,2 @@
 # `katalog`
-My personal reviewer for learning computer science concepts
+A reviewer for learning computer science concepts

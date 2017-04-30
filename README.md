@@ -2,23 +2,23 @@
 Reviewer for learning computer science concepts
 
 ## Concepts
-- [Big O](https://github.com/rjbernaldo/katalog/tree/master/big-o)
-- [Bit Manipulation]()
-- [Memory (Stack vs. Heap)]()
-- [Recursion]()
-- [Dynamic Programming]()
+- [ ][Big O](https://github.com/rjbernaldo/katalog/tree/master/big-o)
+- [ ][Bit Manipulation]()
+- [ ][Memory (Stack vs. Heap)]()
+- [ ][Recursion]()
+- [ ][Dynamic Programming]()
 
 ## Data Structures
-- [Linked Lists]()
-- [Trees, Tries, & Graphs]()
-- [Stacks & Queues]()
-- [Heaps]()
-- [Vectors & ArrayLists]()
-- [Hash Tables]()
+- [ ][Linked Lists]()
+- [ ][Trees, Tries, & Graphs]()
+- [ ][Stacks & Queues]()
+- [ ][Heaps]()
+- [ ][Vectors & ArrayLists]()
+- [ ][Hash Tables]()
 
 ## Algorithms
-- [Breadth-First Search]()
-- [Depth-First Search]()
-- [Binary Search]()
-- [Merge Sort]()
-- [Quick Sort]()
+- [ ][Breadth-First Search]()
+- [ ][Depth-First Search]()
+- [ ][Binary Search]()
+- [ ][Merge Sort]()
+- [ ][Quick Sort]()

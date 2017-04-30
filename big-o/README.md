@@ -2,6 +2,8 @@
 
 Metric to describe the efficiency of an algorithm.
 
+## Examples
+
 ### `O(1)`
   ```
   (a, b) => return a + b;

@@ -26,4 +26,4 @@ Reviewer for learning computer science concepts
 - [ ] [Rabin-Karp Algorithm]()
 
 ## Exercises
-- [ ] [Ex1](https://github.com/rjbernaldo/katalog/tree/master/big-o/ex1.js)
+- [ ] [Ex1](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex1.js)

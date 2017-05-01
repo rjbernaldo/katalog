@@ -22,3 +22,8 @@ Reviewer for learning computer science concepts
 - [ ] [Binary Search]()
 - [ ] [Merge Sort]()
 - [ ] [Quick Sort]()
+- [ ] [Heap's Algorithm]()
+- [ ] [Rabin-Karp Algorithm]()
+
+## Exercises
+- [ ] [Ex1](https://github.com/rjbernaldo/katalog/tree/master/big-o/ex1.js)

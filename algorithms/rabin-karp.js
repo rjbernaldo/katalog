@@ -3,16 +3,16 @@
 * the index.
 */
 
-// Brute force: O(sb)
-const search = (s, b) => {
-  for (var i = 0; i < b.length; i++) {
+// Brute force: O(text*str)
+const search = (text, str) => {
+  for (var i = 0; i < text.length; i++) {
     var found = false;
     
-    for (var j = i; j < i + s.length; j++) {
-      let sChar = s[j - i];
-      let bChar = b[j];
+    for (var j = i; j < i + str.length; j++) {
+      let strChar = str[j - i];
+      let textChar = text[j];
       
-      found = bChar === sChar
+      found = textChar === strChar
         ? true
         : false;
     }
@@ -23,25 +23,25 @@ const search = (s, b) => {
   return -1;
 };
 
-console.log(search('abc', 'djfabdjgkusdabckskdjfalsdf'));
+console.log(search('djfabdjgkusdabckskdjfalsdf', 'abc'));
 
-// Rabin-Karp O(s+b) or O(s(b-s))
-const optimalSearch = (s, b) => {
+// Rabin-Karp O(text+str) or O(str*(text-str))
+const optimalSearch = (text, str) => {
   const base = 31;
   const hash = genHash(base);
-  const sLen = s.length;
-  const bLen = b.length;
+  const textLen = text.length;
+  const strLen = str.length;
   
-  var sHash = hash(s, 0, sLen)
-  var bHash = hash(b, 0, sLen);
-  var basePow = Math.pow(base, sLen);
+  var textHash = hash(text, 0, strLen);
+  var strHash = hash(str, 0, strLen)
+  var basePow = Math.pow(base, strLen);
   
-  for (var i = 0; i < bLen - sLen; i++) {
-    if (sHash === bHash) {
+  for (var i = 0; i < textLen - strLen; i++) {
+    if (textHash === strHash) {
       var found = false;
       
-      for (var j = 0; j < sLen; j++) {
-        found = b[i + j] === s[j]
+      for (var j = 0; j < strLen; j++) {
+        found = text[i + j] === str[j]
           ? true
           : false;
       }
@@ -49,7 +49,7 @@ const optimalSearch = (s, b) => {
       if (found) return i;
     }
     
-    bHash = base * bHash - basePow * b.charCodeAt(i) + b.charCodeAt(i + s.length);
+    textHash = base * textHash - basePow * text.charCodeAt(i) + text.charCodeAt(i + str.length);
   }
   
   return -1
@@ -67,4 +67,4 @@ const genHash = (base) => {
   };
 };
 
-console.log(optimalSearch('abc', 'djfhabdjgusdabckskdjfalsdf'));
+console.log(optimalSearch('djfhabdjgusdabckskdjfalsdf', 'abc'));

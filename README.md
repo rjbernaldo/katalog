@@ -23,7 +23,7 @@ Reviewer for learning computer science concepts
 - [ ] [Merge Sort]()
 - [ ] [Quick Sort]()
 - [ ] [Heap's Algorithm]()
-- [ ] [Rabin-Karp Algorithm](https://github.com/rjbernaldo/katalog/blob/master/algorithms/rabin-karp.js)
+- [x] [Rabin-Karp Algorithm](https://github.com/rjbernaldo/katalog/blob/master/algorithms/rabin-karp.js)
 
 ## Exercises
 

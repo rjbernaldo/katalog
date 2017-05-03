@@ -25,6 +25,10 @@ Reviewer for learning computer science concepts
 - [ ] [Heap's Algorithm]()
 - [x] [Rabin-Karp Algorithm](https://github.com/rjbernaldo/katalog/blob/master/algorithms/rabin-karp.js)
 
-## Exercises
+## Practice
 
-- [ ] [Ex1](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex1.js)
+### Strings
+
+- [x] [isUnique](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex1.js)
+- [x] [isPermutation](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex2.js)
+- [x] [spacesToString](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex3.js)

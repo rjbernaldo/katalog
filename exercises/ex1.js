@@ -1,14 +1,22 @@
 /*
-* Given a smaller string s and a bigger string b, design an algorithm to find 
-* all permutations of  the shorter string within the longer one.
-* Print the location of each permutation.
+* Implement an algorithm to determine if a string has all unique
+* characters. What if you cannot use additional data structures?
 */
 
-var s = 'abc';
-var b = 'abcdbabbcabcbcacba';
-
-function findPerm(s, b) {
+// O(N)
+const isUnique = (str) => {
+  var hash = {};
   
-}
+  for (var i = 0; i < str.length; i++) {
+    if (hash[str[i]]) {
+      return false;
+    } else {
+      hash[str[i]] = true;
+    }
+  }
+  
+  return true;
+};
 
-findPerm(s, b);
+console.log(isUnique('abcdefghijklm'));
+console.log(isUnique('abcdeafghijklm'));

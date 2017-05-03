@@ -2,7 +2,7 @@
 Reviewer for learning computer science concepts
 
 ## Concepts
-- [ ] [Big O](https://github.com/rjbernaldo/katalog/tree/master/big-o)
+- [ ] [Big O](https://github.com/rjbernaldo/katalog/tree/master/concepts/big-o.md)
 - [ ] [Bit Manipulation]()
 - [ ] [Memory (Stack vs. Heap)]()
 - [ ] [Recursion]()

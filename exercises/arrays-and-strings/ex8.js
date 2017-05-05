@@ -4,3 +4,6 @@
 */
 
 // O(N) ?
+const bomberMan = () => {
+  
+};

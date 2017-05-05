@@ -5,3 +5,6 @@
 */
 
 // O(N) ?
+const isSubstringOnce = () => {
+  
+};

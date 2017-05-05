@@ -1,4 +1,5 @@
 # `katalog`
+
 Reviewer for learning computer science concepts
 
 ## Concepts
@@ -9,9 +10,10 @@ Reviewer for learning computer science concepts
 - [ ] [Dynamic Programming]()
 
 ## Data Structures
-- [ ] [Linked Lists]()
+- [ ] [Arrays & Strings](https://github.com/rjbernaldo/katalog/tree/master/data-structures/arrays-and-strings.md)
+- [ ] [Linked Lists](https://github.com/rjbernaldo/katalog/tree/master/data-structures/linked-lists.md)
+- [ ] [Stacks & Queues](https://github.com/rjbernaldo/katalog/tree/master/data-structures/stacks-and-queues.md)
 - [ ] [Trees, Tries, & Graphs]()
-- [ ] [Stacks & Queues]()
 - [ ] [Heaps]()
 - [ ] [Vectors & ArrayLists]()
 - [ ] [Hash Tables]()
@@ -24,11 +26,3 @@ Reviewer for learning computer science concepts
 - [ ] [Quick Sort]()
 - [ ] [Heap's Algorithm]()
 - [x] [Rabin-Karp Algorithm](https://github.com/rjbernaldo/katalog/blob/master/algorithms/rabin-karp.js)
-
-## Practice
-
-### Strings
-
-- [x] [isUnique](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex1.js)
-- [x] [isPermutation](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex2.js)
-- [x] [spacesToString](https://github.com/rjbernaldo/katalog/blob/master/exercises/ex3.js)

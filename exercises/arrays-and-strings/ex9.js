@@ -5,6 +5,13 @@
 */
 
 // O(N) ?
-const isSubstringOnce = () => {
+const isRotation = (s1, s2) => {
   
 };
+
+const isSubstring = () => {
+  
+};
+
+console.log(isRotation('testing', 'gnitset'));
+console.log(isRotation('testing', '2gnitset'));

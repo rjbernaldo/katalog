@@ -3,8 +3,25 @@
 * 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
 */
 
-// O(N) ?
-
-const rotate90 = () => {
+// O(N^2) ?
+const rotate90 = (matrix) => {
+  var rotatedMatrix = [];
   
+  for (var i = 0; i < matrix.length; i++) {
+    var row = [];
+    for (var j = 0; j < matrix[i].length; j++) {
+      let current = matrix[j][i]
+      row.push(current);
+    }
+    rotatedMatrix.push(row);
+  }
+  
+  return rotatedMatrix;
 };
+
+console.log(rotate90([
+  [0,1,2,3],
+  [0,1,2,3],
+  [0,1,2,3],
+  [0,1,2,3],
+]));

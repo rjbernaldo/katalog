@@ -5,6 +5,6 @@
 */
 
 // O(N) ?
-const oneEditAway = () => {
+const oneEditAway = (s1, s2) => {
   
 };

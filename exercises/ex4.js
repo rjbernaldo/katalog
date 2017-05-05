@@ -9,3 +9,10 @@
 */
 
 // O(N) ?
+const permutationPalindrome = (str) => {
+  for (var i = 0; i < str.length; i++) {
+    
+  }
+};
+
+console.log(permutationPalindrome('Tact Coa'));

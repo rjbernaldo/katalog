@@ -4,7 +4,7 @@
 * if they are one edit away.
 */
 
-// O(N) ?
+// O(longerString) ?
 const oneEditAway = (s1, s2) => {
   if (Math.abs(s1.length - s2.length) > 1) return false;
   let shorter = s1.length < s2.length ? s1 : s2;

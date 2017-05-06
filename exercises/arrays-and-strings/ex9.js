@@ -4,7 +4,7 @@
 * rotation of s1 using only one call to isSubstring.
 */
 
-// O(N) ?
+// O(1) ?
 const isRotation = (s1, s2) => {
   return (s1 + s1).indexOf(s2) > - 1;
 };

@@ -6,12 +6,8 @@
 
 // O(N) ?
 const isRotation = (s1, s2) => {
-  
+  return (s1 + s1).indexOf(s2) > - 1;
 };
 
-const isSubstring = () => {
-  
-};
-
-console.log(isRotation('testing', 'gnitset'));
-console.log(isRotation('testing', '2gnitset'));
+console.log(isRotation('testing', 'ingtest'));
+console.log(isRotation('testing', 'ingtest2'));

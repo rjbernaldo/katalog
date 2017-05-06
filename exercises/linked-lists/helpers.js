@@ -16,6 +16,7 @@ class Node {
       current = current.next;
     }
     current.next = last;
+    last.prev = current;
   }
 }
 

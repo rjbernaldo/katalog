@@ -6,7 +6,9 @@
 * it does not need to appear between the left and right partitions.
 */
 
-const Node = require('./Node');
+const Node = require('./helpers').Node;
+const nodeLogger = require('./helpers').nodeLogger;
+const isNotNull = require('./helpers').nodeLogger;
 
 const partition = () => {
   

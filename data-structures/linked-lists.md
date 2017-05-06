@@ -8,3 +8,13 @@ A data structure that represents a sequence of nodes.
 
 ## Techniques
 - The "Runner" (or second pointer) Technique
+
+## Exercises
+- [ ] [removeDups]()
+- [ ] [returnKthToLast]()
+- [ ] [deleteMiddleNode]()
+- [ ] [partition]()
+- [ ] [sumLists]()
+- [ ] [palindrome]()
+- [ ] [intersection]()
+- [ ] [loopDetection]()

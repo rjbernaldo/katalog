@@ -10,11 +10,11 @@ A data structure that represents a sequence of nodes.
 - The "Runner" (or second pointer) Technique
 
 ## Exercises
-- [ ] [removeDups]()
-- [ ] [returnKthToLast]()
-- [ ] [deleteMiddleNode]()
-- [ ] [partition]()
-- [ ] [sumLists]()
-- [ ] [palindrome]()
-- [ ] [intersection]()
-- [ ] [loopDetection]()
+- [x] [removeDups](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex1.js)
+- [ ] [returnKthToLast](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex2.js)
+- [ ] [deleteMiddleNode](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex3.js)
+- [ ] [partition](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex4.js)
+- [ ] [sumLists](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex5.js)
+- [ ] [palindrome](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex6.js)
+- [ ] [intersection](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex7.js)
+- [ ] [loopDetection](https://github.com/rjbernaldo/katalog/blob/master/exercises/arrays-and-strings/ex8.js)

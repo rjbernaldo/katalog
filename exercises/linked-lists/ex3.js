@@ -7,12 +7,20 @@ const nodeLogger = require('./helpers').nodeLogger;
 const isNotNull = require('./helpers').nodeLogger;
 
 const deleteMiddleNode = (head, node) => {
-  while (isNotNull(head)) {
-    if (head === node) {
-      head.prev.next = head.next;
-    }
-    
-    head = head.next;
+  // while (isNotNull(head)) {
+  //   if (head === node) {
+  //     head.prev.next = head.next;
+  //   }
+  //   
+  //   head = head.next;
+  // }
+  
+  // recursive solution
+  if (head.next && head.next === node) {
+    let next = head.next.next;
+    head.next = next;
+  } else {
+    deleteMiddleNode(head.next, node)
   }
 };
 

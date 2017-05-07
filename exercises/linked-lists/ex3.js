@@ -6,6 +6,23 @@ const Node = require('./helpers').Node;
 const nodeLogger = require('./helpers').nodeLogger;
 const isNotNull = require('./helpers').nodeLogger;
 
-const deleteMiddleNode = () => {
-  
+const deleteMiddleNode = (head, node) => {
+  while (isNotNull(head)) {
+    if (head === node) {
+      head.prev.next = head.next;
+    }
+    
+    head = head.next;
+  }
 };
+
+let del;
+let head = new Node(0);
+for (let i = 0; i < 10; i++) {
+  if (i === 5) del = head.appendToTail('del');
+  head.appendToTail(i);
+}
+
+console.log(nodeLogger(head));
+deleteMiddleNode(head, del);
+console.log(nodeLogger(head));

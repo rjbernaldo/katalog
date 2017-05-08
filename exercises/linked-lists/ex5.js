@@ -7,7 +7,7 @@
 
 const Node = require('./helpers').Node;
 const nodeLogger = require('./helpers').nodeLogger;
-const isNotNull = require('./helpers').nodeLogger;
+const isNotNull = require('./helpers').isNotNull;
 
 const sumLists = (node1, node2) => {
   if (node1 === null) return 0;

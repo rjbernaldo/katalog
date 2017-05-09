@@ -26,16 +26,14 @@ const sumListsRecursively = (n1, n2) => {
   return Object.assign({}, current, { sum: sum, carry: val >= 10 ? 1 : 0 });
 };
 
-// 101
 let n1 = new Node(1);
 n1.appendToTail(5);
 n1.appendToTail(5);
 
-// 50
 let n2 = new Node(5);
 n2.appendToTail(5);
 n2.appendToTail(5);
 
-// console.log(nodeLogger(n1));
-// console.log(nodeLogger(n2));
+console.log(nodeLogger(n1));
+console.log(nodeLogger(n2));
 console.log(nodeLogger(sumLists(n1, n2)));

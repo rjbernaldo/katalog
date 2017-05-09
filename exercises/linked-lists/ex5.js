@@ -10,34 +10,20 @@ const nodeLogger = require('./helpers').nodeLogger;
 const isNotNull = require('./helpers').isNotNull;
 
 const sumLists = (n1, n2) => {
+  // TODO: padd linked lists
   return sumListsRecursively(n1, n2).sum;
 };
 
 const sumListsRecursively = (n1, n2) => {
-  // TODO: Padding
   if (n1 === null && n2 === null) return { carry: 0 };
   
-  let next1 = n1 ? n1.next : null;
-  let next2 = n2 ? n2.next : null;
+  let current = sumListsRecursively(n1.next, n2.next);
   
-  let current = sumListsRecursively(next1, next2);
-  
-  let n1Data = n1 ? n1.data : 0;
-  let n2Data = n2 ? n2.data : 0;
-  let val = n1Data + n2Data + current.carry;
-  
-  var carry;
-  if (val.toString().length > 1) {
-    carry = parseInt(val.toString()[0]);
-    val = parseInt(val.toString()[1]);
-  }
-  
-  let sum = new Node(val)
+  let val = n1.data + n2.data + current.carry;
+  let sum = new Node(val % 10);
   sum.next = current.sum;
-  current.sum = sum;
-  current.carry = carry || 0;
   
-  return current;
+  return Object.assign({}, current, { sum: sum, carry: val >= 10 ? 1 : 0 });
 };
 
 // 101

@@ -10,7 +10,7 @@ const nodeLogger = require('./helpers').nodeLogger;
 const isNotNull = require('./helpers').isNotNull;
 
 const sumLists = (n1, n2) => {
-  // TODO: padd linked lists
+  // TODO: pad linked lists
   return sumListsRecursively(n1, n2).sum;
 };
 

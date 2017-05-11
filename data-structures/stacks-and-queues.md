@@ -11,7 +11,7 @@
 
 ## Exercises
 - [x] [threeInOne](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex1.js)
-- [ ] [stackMin](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex2.js)
+- [x] [stackMin](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex2.js)
 - [ ] [stackOfPlates](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex3.js)
 - [ ] [queueViaStacks](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex4.js)
 - [ ] [sortStack](https://github.com/rjbernaldo/katalog/blob/master/exercises/stacks-and-queues/ex5.js)

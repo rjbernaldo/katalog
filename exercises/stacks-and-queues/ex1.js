@@ -9,4 +9,3 @@ const threeInOne = () => {
   // arr2 = 5 - 9
   // arr 3 = 10 - 14
 };
-

@@ -12,7 +12,7 @@ Reviewer for learning computer science concepts
 ## Data Structures
 - [x] [Arrays & Strings](https://github.com/rjbernaldo/katalog/tree/master/data-structures/arrays-and-strings.md)
 - [x] [Linked Lists](https://github.com/rjbernaldo/katalog/tree/master/data-structures/linked-lists.md)
-- [ ] [Stacks & Queues](https://github.com/rjbernaldo/katalog/tree/master/data-structures/stacks-and-queues.md)
+- [x] [Stacks & Queues](https://github.com/rjbernaldo/katalog/tree/master/data-structures/stacks-and-queues.md)
 - [ ] [Trees, Tries, & Graphs]()
 - [ ] [Heaps]()
 - [ ] [Vectors & ArrayLists]()

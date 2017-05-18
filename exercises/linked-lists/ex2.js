@@ -3,27 +3,23 @@
 */
 
 const Node = require('./helpers').Node;
-const nodeLogger = require('./helpers').nodeLogger;
-const isNotNull = require('./helpers').isNotNull;
-
-// O(N)
-const returnKthToLast = (n, num) => {
-  return findKthToLast(n, num).node;
-}
 
 const findKthToLast = (n, num) => {
-  if (n === null) return { count: 0 }
-  
-  let current = findKthToLast(n.next, num);
-  
+  if (n === null) return { count: 0 };
+
+  const current = findKthToLast(n.next, num);
+
   return current.count === num
     ? { node: n, count: ++current.count }
     : Object.assign({}, current, { count: ++current.count });
 };
 
-let head = new Node(0);
-for (let i = 0; i < 10; i++) {
+const head = new Node(0);
+for (let i = 0; i < 10; i += 1) {
   head.appendToTail(i);
 }
+
+// O(N)
+const returnKthToLast = (n, num) => findKthToLast(n, num).node;
 
 console.log(returnKthToLast(head, 4).data);

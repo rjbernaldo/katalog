@@ -11,28 +11,28 @@ Array.prototype.peek = function () {
 
 Array.prototype.isEmpty = function () {
   return this.length === 0;
-}
+};
 
 const sortStack = (s) => {
-  let stack = [].concat(s);
-  let sortedStack = [];
+  const stack = [].concat(s);
+  const sortedStack = [];
 
-  while(stack.length > 0) {
-    let clonedStack = [].concat(stack);
+  while (stack.length > 0) {
+    const clonedStack = [].concat(stack);
     let highest;
-    while(!clonedStack.isEmpty()) {
-      let current = clonedStack.pop();
+    while (!clonedStack.isEmpty()) {
+      const current = clonedStack.pop();
       if (!highest || current > highest) highest = current;
     }
 
-    let cache = [];
+    const cache = [];
     let highestFound = false;
-    while(!highestFound) {
-      let current = stack.pop();
+    while (!highestFound) {
+      const current = stack.pop();
       if (highest === current) {
         sortedStack.push(current);
         highestFound = true;
-        while(!cache.isEmpty()) {
+        while (!cache.isEmpty()) {
           stack.push(cache.pop());
         }
       } else {
@@ -44,7 +44,7 @@ const sortStack = (s) => {
   return sortedStack;
 };
 
-let stack = [1,2,3,4,5];
-let sortedStack = sortStack(stack);
+const stack = [1, 2, 3, 4, 5];
+const sortedStack = sortStack(stack);
 console.log(stack);
 console.log(sortedStack);

@@ -8,14 +8,16 @@
 
 const Node = require('./helpers').Node;
 const nodeLogger = require('./helpers').nodeLogger;
-const isNotNull = require('./helpers').isNotNull;
 
 const partition = (node, val) => {
-  var left, firstLeft, right, firstRight;
-  
+  let left = null;
+  let firstLeft = null;
+  let right = null;
+  let firstRight = null;
+
   while (node !== null) {
-    let current = new Node(node.data);
-    
+    const current = new Node(node.data);
+
     if (current.data < val) {
       if (!left) {
         left = current;
@@ -33,21 +35,21 @@ const partition = (node, val) => {
         right = current;
       }
     }
-    
+
     node = node.next;
   }
-  
+
   left.next = firstRight;
-  
+
   return firstLeft;
 };
 
 
-let head = new Node(10);
-for (let i = 9; i > 0; i--) {
+const head = new Node(10);
+for (let i = 9; i > 0; i -= 1) {
   head.appendToTail(i);
 }
 
 console.log(nodeLogger(head));
-let newHead = partition(head, 5)
+const newHead = partition(head, 5);
 console.log(nodeLogger(newHead));

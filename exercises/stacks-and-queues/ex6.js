@@ -13,20 +13,20 @@ class AnimalShelter {
   constructor() {
     this.queue = [];
   }
-  
+
   enqueue(animal) {
     this.queue.push(animal);
   }
-  
+
   dequeue(type) {
     let animal;
-    
+
     if (type) {
-      let cache = [];
-      
-      while(!animal) {
+      const cache = [];
+
+      while (!animal) {
         animal = this.queue.shift(animal) || null;
-        
+
         if (animal.type === type) {
           this.queue = cache.concat(this.queue);
         } else {
@@ -37,20 +37,20 @@ class AnimalShelter {
     } else {
       animal = this.queue.shift(animal) || null;
     }
-    
+
     return animal;
   }
-  
+
   dequeueDog() {
     return this.dequeue('dog');
   }
-  
+
   dequeueCat() {
     return this.dequeue('cat');
   }
 }
 
-let animalShelter = new AnimalShelter();
+const animalShelter = new AnimalShelter();
 animalShelter.enqueue({ type: 'cat', name: 'cat1' });
 animalShelter.enqueue({ type: 'cat', name: 'cat2' });
 animalShelter.enqueue({ type: 'dog', name: 'dog1' });

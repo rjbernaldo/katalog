@@ -7,9 +7,10 @@ const nodeLogger = require('./helpers').nodeLogger;
 const isNotNull = require('./helpers').isNotNull;
 
 // O(N)
-const removeDups = (n) => {
-  var hash = {};
-  
+const removeDups = (node) => {
+  let n = node;
+  const hash = {};
+
   while (isNotNull(n)) {
     if (hash[n.data]) {
       n.prev.next = n.next;
@@ -22,7 +23,8 @@ const removeDups = (n) => {
 };
 
 // O(N^2)
-const removeDupsNoBuffer = (n) => {
+const removeDupsNoBuffer = (node) => {
+  let n = node;
   while (isNotNull(n)) {
     let runner = n.next;
     while (runner !== null) {
@@ -33,8 +35,8 @@ const removeDupsNoBuffer = (n) => {
   }
 };
 
-let head = new Node(0);
-for (let i = 0; i < 10; i++) {
+const head = new Node(0);
+for (let i = 0; i < 10; i += 1) {
   head.appendToTail(i);
 }
 head.appendToTail(2);
@@ -43,8 +45,8 @@ console.log(nodeLogger(head));
 removeDups(head);
 console.log(nodeLogger(head));
 
-let head2 = new Node(0);
-for (let i = 0; i < 10; i++) {
+const head2 = new Node(0);
+for (let i = 0; i < 10; i += 1) {
   head2.appendToTail(i);
 }
 head2.appendToTail(2);

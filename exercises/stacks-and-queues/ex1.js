@@ -4,7 +4,7 @@
 
 // fixed array length
 const threeInOne = () => {
-  let arr = new Array(15);
+  const arr = new Array(15);
   // arr1 = 0 - 4
   // arr2 = 5 - 9
   // arr 3 = 10 - 14

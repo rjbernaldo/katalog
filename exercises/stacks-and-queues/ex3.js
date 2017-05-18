@@ -14,32 +14,32 @@ class CustomStack {
     this.threshold = threshold;
     this.stack = [];
   }
-  
+
   push(elem) {
-    let lastSet = this.stack[this.stack.length - 1];
+    const lastSet = this.stack[this.stack.length - 1];
     if (lastSet && lastSet.length < this.threshold) {
       lastSet.push(elem);
     } else {
       this.stack.push([elem]);
     }
   }
-  
+
   pop() {
-    let lastSet = this.stack[this.stack.length - 1];
+    const lastSet = this.stack[this.stack.length - 1];
     let elem;
     if (lastSet) {
       elem = lastSet.pop();
-      
+
       if (lastSet.length === 0) {
         this.stack.pop();
       }
     }
-    
+
     return elem;
   }
 }
 
-let stack = new CustomStack(2);
+const stack = new CustomStack(2);
 console.log(stack);
 stack.push(4);
 console.log(stack);

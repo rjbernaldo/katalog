@@ -13,27 +13,27 @@ const isNotNull = require('./helpers').isNotNull;
 const intersection = (n1, n2) => {
   while (n1 !== null && n2 !== null) {
     n2Start = n2;
-    
+
     while (n2Start !== null) {
-      if (n1 === n2Start) return n1
-      
+      if (n1 === n2Start) return n1;
+
       n2Start = n2Start.next;
     }
-    
+
     n2 = n2.next;
     n1 = n1.next;
   }
-  
+
   return false;
 };
 
 
-let n1 = new Node(1);
-let mid = n1.appendToTail('mid');
+const n1 = new Node(1);
+const mid = n1.appendToTail('mid');
 n1.appendToTail(3);
 
-let n2 = new Node(4);
-let last = n2.appendToTail(5);
+const n2 = new Node(4);
+const last = n2.appendToTail(5);
 last.next = mid;
 n2.appendToTail(6);
 

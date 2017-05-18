@@ -8,22 +8,22 @@ class Node {
     this.data = data;
     this.prev = null;
   }
-  
+
   appendToTail(data) {
-    let last = new Node(data);
+    const last = new Node(data);
     let current = this;
     while (isNotNull(current.next)) {
       current = current.next;
     }
     current.next = last;
     last.prev = current;
-    
+
     return last;
   }
 }
 
 const nodeLogger = (n) => {
-  var linkedList = [];
+  const linkedList = [];
   while (isNotNull(n)) {
     linkedList.push(n.data)
     n = n.next;
@@ -31,12 +31,10 @@ const nodeLogger = (n) => {
   return linkedList.join(' -> ');
 };
 
-const isNotNull = (n) => {
-  return !(n === null || n === undefined);
-};
+const isNotNull = n => !(n === null || n === undefined);
 
 module.exports = {
   Node,
   nodeLogger,
-  isNotNull
+  isNotNull,
 };

@@ -44,6 +44,51 @@ A full binary tree is a binary tree in which each node has either zero or two ch
 
 A perfect binary tree is one that is both full and complete.
 
+### Binary Tree Traversal
+
+  - In-Order Traversal
+  ```
+  const inOrderTraversal = (node) => {
+    if (node !== null) {
+      inOrderTravesal(node.left);
+      visit(node);
+      inOrderTravesal(node.right);
+    }
+  };
+  ```
+
+  - Pre-Order Traversal
+
+  ```
+  const preOrderTraversal = (node) => {
+    if (node !== null) {
+      visit(node);
+      inOrderTravesal(node.left);
+      inOrderTravesal(node.right);
+    }
+  };
+  ```
+  
+  - Post-Order Traversal
+
+  ```
+  const postOrderTraversal = (node) => {
+    if (node !== null) {
+      inOrderTravesal(node.left);
+      inOrderTravesal(node.right);
+      visit(node);
+    }
+  };
+  ```
+  
+### Binary Heaps (Min-Heaps and Max-Heaps)
+
+A min-heap is an ascending complete binary tree (totally filled other than the rightmost elements on the last level) where each node is smaller than it's children. The root is the minimum element in the tree.
+
+  - Insert
+  
+  - Extract Minimum Element
+
 ## Exercises
 - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)
 - [ ] [minimalTree](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex2.js)

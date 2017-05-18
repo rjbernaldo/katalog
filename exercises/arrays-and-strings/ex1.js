@@ -5,16 +5,16 @@
 
 // O(N)
 const isUnique = (str) => {
-  var hash = {};
-  
-  for (var i = 0; i < str.length; i++) {
+  const hash = {};
+
+  for (let i = 0; i < str.length; i += 1) {
     if (hash[str[i]]) {
       return false;
-    } else {
-      hash[str[i]] = true;
     }
+
+    hash[str[i]] = true;
   }
-  
+
   return true;
 };
 

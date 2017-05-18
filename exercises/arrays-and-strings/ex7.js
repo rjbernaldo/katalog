@@ -5,23 +5,23 @@
 
 // O(N^2) ?
 const rotate90 = (matrix) => {
-  var rotatedMatrix = [];
-  
-  for (var i = 0; i < matrix.length; i++) {
-    var row = [];
-    for (var j = 0; j < matrix[i].length; j++) {
-      let current = matrix[j][i]
+  const rotatedMatrix = [];
+
+  for (let i = 0; i < matrix.length; i += 1) {
+    const row = [];
+    for (let j = 0; j < matrix[i].length; j += 1) {
+      const current = matrix[j][i];
       row.push(current);
     }
     rotatedMatrix.push(row);
   }
-  
+
   return rotatedMatrix;
 };
 
 console.log(rotate90([
-  [0,1,2,3],
-  [0,1,2,3],
-  [0,1,2,3],
-  [0,1,2,3],
+  [0, 1, 2, 3],
+  [0, 1, 2, 3],
+  [0, 1, 2, 3],
+  [0, 1, 2, 3],
 ]));

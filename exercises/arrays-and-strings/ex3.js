@@ -4,16 +4,16 @@
 
 // O(N) ?
 const spacesToString = (str, len) => {
-  var newStr = [];
-  
-  for (var i = 0; i < len; i++) {
+  const newStr = [];
+
+  for (let i = 0; i < len; i += 1) {
     if (str[i] === ' ') {
       newStr.push('%20');
     } else {
       newStr.push(str[i]);
     }
   }
-  
+
   return newStr.join('');
 };
 

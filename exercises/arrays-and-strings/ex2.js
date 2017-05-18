@@ -6,21 +6,21 @@
 // O(a+b)
 const isPermutation = (a, b) => {
   if (a.length !== b.length) return false;
-  
-  var cache = {};
-  
-  for (var i = 0; i < a.length; i++) {
+
+  const cache = {};
+
+  for (let i = 0; i < a.length; i += 1) {
     cache[a[i]] = true;
   }
-  
-  for (var j = 0; j < b.length; j++) {
+
+  for (let j = 0; j < b.length; j += 1) {
     if (cache[b[j]]) {
-      cache[b[j]] = false
+      cache[b[j]] = false;
     } else {
       return false;
     }
   }
-  
+
   return true;
 };
 

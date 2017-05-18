@@ -5,34 +5,35 @@
 
 // O(MN) ?
 const bomberMan = (matrix) => {
-  var iCache = {};
-  var jCache = {};
-  
-  for (var i = 0; i < matrix.length; i++) {
-    for (var j = 0; j < matrix[i].length; j++) {
-      let current = matrix[i][j];
-      
+  const currentMatrix = matrix;
+  const iCache = {};
+  const jCache = {};
+
+  for (let i = 0; i < currentMatrix.length; i += 1) {
+    for (let j = 0; j < currentMatrix[i].length; j += 1) {
+      const current = currentMatrix[i][j];
+
       if (current === 0 && !(iCache[i] || jCache[j])) {
         iCache[i] = true;
         jCache[j] = true;
-        
-        for (var x = 0; x < matrix.length; x++) {
-          matrix[x][j] = 0;
+
+        for (let x = 0; x < currentMatrix.length; x += 1) {
+          currentMatrix[x][j] = 0;
         }
-        
-        for (var y = 0; y < matrix[i].length; y++) {
-          matrix[i][y] = 0;
+
+        for (let y = 0; y < currentMatrix[i].length; y += 1) {
+          currentMatrix[i][y] = 0;
         }
       }
     }
   }
-  
-  return matrix;
+
+  return currentMatrix;
 };
 
 console.log(bomberMan([
-  [1,1,1,1],
-  [1,0,1,1],
-  [1,1,1,1],
-  [1,1,1,1],
+  [1, 1, 1, 1],
+  [1, 0, 1, 1],
+  [1, 1, 1, 1],
+  [1, 1, 1, 1],
 ]));

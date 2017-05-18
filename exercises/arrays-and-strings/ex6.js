@@ -6,30 +6,30 @@
 
 // O(N)
 const compressString = (str) => {
-  let strLen = str.length;
-  var cache = [];
-  var lastChar;
-  
-  for (var i = 0; i < strLen; i++) {
-    let char = str[i];
-    
+  const strLen = str.length;
+  const cache = [];
+  let lastChar = null;
+
+  for (let i = 0; i < strLen; i += 1) {
+    const char = str[i];
+
     if (lastChar) {
       if (lastChar.char === char) {
-        lastChar.count++;
+        lastChar.count += 1;
       } else {
         cache.push(`${lastChar.char}${lastChar.count}`);
-        
-        lastChar = { char: char, count: 1 };
+
+        lastChar = { char, count: 1 };
       }
     } else {
-      lastChar = { char: char, count: 1 };
+      lastChar = { char, count: 1 };
     }
-    
+
     if (i + 1 === strLen) cache.push(`${lastChar.char}${lastChar.count}`);
   }
-  
-  let newStr = cache.join('');
-  
+
+  const newStr = cache.join('');
+
   return newStr.length >= str.length
     ? str
     : newStr;

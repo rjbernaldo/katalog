@@ -11,25 +11,25 @@
 
 // O(N) ?
 const permutationPalindrome = (str) => {
-  var cache = {};
-  var oddCount = 0;
-  
-  for (var i = 0; i < str.length; i++) {
-    let char = str[i].toLowerCase();
-    
+  const cache = {};
+  const oddCount = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i].toLowerCase();
+
     if (char === ' ') continue;
-    
+
     if (isNaN(cache[char])) {
       cache[char] = 1;
     } else {
-      cache[char]++;
+      cache[char] += 1;
     }
   }
-  
+
   for (var char in cache) {
-    if (cache[char] % 2 !== 0) oddCount++;
+    if (cache[char] % 2 !== 0) oddCount += 1;
   }
-  
+
   return oddCount === 1;
 };
 

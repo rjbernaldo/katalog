@@ -87,7 +87,15 @@ A min-heap is an ascending complete binary tree (totally filled other than the r
 
   - Insert
   
+    1. Insert element at the rightmost bottom.
+    2. Fix the tree by swapping the new element with it's parent until we find an appropriate spot for the element (essentially bubbling up the minimum element).
+  
+  
   - Extract Minimum Element
+  
+    1. Get the minimum element (root node).
+    2. Swap with last element (rightmost bottom element).
+    3. Bubble down element (always swap with a child of lower value) in step2 until the min-heap property is restored.
 
 ## Exercises
 - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)

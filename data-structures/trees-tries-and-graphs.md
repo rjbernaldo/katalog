@@ -2,47 +2,47 @@
 
 ## Trees
 
-A tree is a data structure composed of nodes.
-```
-// Example
-class Node {
-  constructor() {
-    this.name = null;
-    this.children = [];
+  A tree is a data structure composed of nodes.
+  ```
+  // Example
+  class Node {
+    constructor() {
+      this.name = null;
+      this.children = [];
+    }
   }
-}
-```
+  ```
 
 ## Binary Trees
 
-A binary tree is a tree in which each node has up to two children. A node without any children is called a `leaf` node.
+  A binary tree is a tree in which each node has up to two children. A node without any children is called a `leaf` node.
 
 ### Binary Search Trees
 
-A binary search tree is a tree in which every node fits a specific ordering property:
+  A binary search tree is a tree in which every node fits a specific ordering property:
 
-  - all left descendents <= n < all right descendents
+    - all left descendents <= n < all right descendents
 
-This must be true for all nodes.
+  This must be true for all nodes.
 
 ### Balanced vs. Unbalanced
 
-Balanced "enough" to ensure O(log n) times for insert and find, but not necessarily as balanced as it could be.
+  Balanced "enough" to ensure O(log n) times for insert and find, but not necessarily as balanced as it could be.
 
-  - Red-Black Trees
-  - AVL Trees
+    - Red-Black Trees
+    - AVL Trees
 
 ### Complete Binary Trees
 
-A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
+  A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
 
 ### Full Binary Trees
 
-A full binary tree is a binary tree in which each node has either zero or two children. No nodes have only one child.
+  A full binary tree is a binary tree in which each node has either zero or two children. No nodes have only one child.
 
 ### Perfect Binary Trees
 
-A perfect binary tree is one that is both full and complete.
+  A perfect binary tree is one that is both full and complete.
 
 ### Binary Tree Traversal
 
@@ -83,7 +83,7 @@ A perfect binary tree is one that is both full and complete.
   
 ### Binary Heaps (Min-Heaps and Max-Heaps)
 
-A min-heap is an ascending complete binary tree (totally filled other than the rightmost elements on the last level) where each node is smaller than it's children. The root is the minimum element in the tree.
+  A min-heap is an ascending complete binary tree (totally filled other than the rightmost elements on the last level) where each node is smaller than it's children. The root is the minimum element in the tree.
 
   - Insert
   

@@ -97,6 +97,22 @@
     2. Swap with last element (rightmost bottom element).
     3. Bubble down element (always swap with a child of lower value) in step2 until the min-heap property is restored.
 
+### Tries
+
+  A variant of an n-ary tree in which characters are stored at each node.
+
+  - Sometimes called a prefix tree.
+  - Each path dow nthe tree may represent a word.
+  - * nodes (or null nodes) indicate complete words.
+
+### Graphs
+
+  A graph is simply a collection of nodes with edges between (some of) them.
+
+  - Can be directed (one-way) or undirected (two-way).
+  - If there is a path between every pair of vertices it is called a "connected graph".
+  - If there is no cycles it is an acyclic graph.
+
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)
   - [ ] [minimalTree](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex2.js)

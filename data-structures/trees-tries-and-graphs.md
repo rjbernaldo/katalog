@@ -112,6 +112,24 @@
   - Can be directed (one-way) or undirected (two-way).
   - If there is a path between every pair of vertices it is called a "connected graph".
   - If there is no cycles it is an acyclic graph.
+  - Common ways to represent a graph
+
+    - Adjacency List
+
+    Every vertex (or node) stores a list of adjacent vertices. 
+    In a unidirected graph, an edge like (a, b) would be stored twice: once in a's adjacent vertices and once in b's adjacent vertices.
+
+    - Adjacency Matrix
+
+    An adjacency matrix is an NxN boolean matrix (where N is the number of nodes), where a true value at matrix[i][j] indicates an edge from node i to node j.
+    In a unidirected graph, an adjacency matrix with my symmetric.
+
+### Graph Search
+
+  Two most common ways to search a graph are:
+
+  - Depth-first search (DFS)
+  - Breadth-first search (BFS)
 
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)

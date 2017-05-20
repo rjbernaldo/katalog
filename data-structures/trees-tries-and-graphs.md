@@ -17,69 +17,65 @@
 
   A binary tree is a tree in which each node has up to two children. A node without any children is called a `leaf` node.
 
-### Binary Search Trees
+  - Binary Search Trees
 
-  A binary search tree is a tree in which every node fits a specific ordering property:
+      A binary search tree is a tree in which every node fits a specific ordering property: `all left descendents <= n < all right descendents`
 
-    - all left descendents <= n < all right descendents
+  - Balanced vs. Unbalanced
 
-  This must be true for all nodes.
+    Balanced "enough" to ensure O(log n) times for insert and find, but not necessarily as balanced as it could be.
 
-### Balanced vs. Unbalanced
+      - Red-Black Trees
+      - AVL Trees
 
-  Balanced "enough" to ensure O(log n) times for insert and find, but not necessarily as balanced as it could be.
+  - Complete Binary Trees
 
-    - Red-Black Trees
-    - AVL Trees
+      A binary tree in which every level of the tree is fully filled, except for the last level (left to right filled).
 
-### Complete Binary Trees
+  - Full Binary Trees
 
-  A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
+      A binary tree in which each node has either zero or two children. No nodes have only one child.
 
-### Full Binary Trees
+  - Perfect Binary Trees
 
-  A full binary tree is a binary tree in which each node has either zero or two children. No nodes have only one child.
+      A binary tree that is both full and complete.
 
-### Perfect Binary Trees
+  - Binary Tree Traversal
 
-  A perfect binary tree is one that is both full and complete.
+    - In-Order Traversal
+    ```
+    const inOrderTraversal = (node) => {
+      if (node !== null) {
+        inOrderTravesal(node.left);
+        visit(node);
+        inOrderTravesal(node.right);
+      }
+    };
+    ```
 
-### Binary Tree Traversal
+    - Pre-Order Traversal
 
-  - In-Order Traversal
-  ```
-  const inOrderTraversal = (node) => {
-    if (node !== null) {
-      inOrderTravesal(node.left);
-      visit(node);
-      inOrderTravesal(node.right);
-    }
-  };
-  ```
+    ```
+    const preOrderTraversal = (node) => {
+      if (node !== null) {
+        visit(node);
+        inOrderTravesal(node.left);
+        inOrderTravesal(node.right);
+      }
+    };
+    ```
+    
+    - Post-Order Traversal
 
-  - Pre-Order Traversal
-
-  ```
-  const preOrderTraversal = (node) => {
-    if (node !== null) {
-      visit(node);
-      inOrderTravesal(node.left);
-      inOrderTravesal(node.right);
-    }
-  };
-  ```
-  
-  - Post-Order Traversal
-
-  ```
-  const postOrderTraversal = (node) => {
-    if (node !== null) {
-      inOrderTravesal(node.left);
-      inOrderTravesal(node.right);
-      visit(node);
-    }
-  };
-  ```
+    ```
+    const postOrderTraversal = (node) => {
+      if (node !== null) {
+        inOrderTravesal(node.left);
+        inOrderTravesal(node.right);
+        visit(node);
+      }
+    };
+    ```
   
 ### Binary Heaps (Min-Heaps and Max-Heaps)
 

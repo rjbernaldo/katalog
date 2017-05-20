@@ -103,7 +103,7 @@
 
   - Sometimes called a prefix tree.
   - Each path dow nthe tree may represent a word.
-  - * nodes (or null nodes) indicate complete words.
+  - `*` nodes (or null nodes) indicate complete words.
 
 ### Graphs
 
@@ -129,7 +129,23 @@
   Two most common ways to search a graph are:
 
   - Depth-first search (DFS)
+
+    - DFS starts at the root (or another arbitrarily selected node) and then explores the current branch completely before moving on to the next branch.
+    - Goes deep then wide.
+    - Preferred when we want to visit every node in the graph (simpler).
+    - Pre-order traversal is a form of DFS.
+
   - Breadth-first search (BFS)
+
+    - BFS starts at the root and then explores each neighbor before going on to any of their children.
+    - Goes wide then deep.
+    - Preferred if we want to find shortest path between nodes.
+    - BFS is not recursive, it uses a queue.
+
+  - Bidirectional Search
+
+    - Bidirectional search is used to find the shortest path between a source and destination node.
+    - Runs two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.
 
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)

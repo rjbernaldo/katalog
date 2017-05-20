@@ -4,7 +4,6 @@
 
   A tree is a data structure composed of nodes.
   ```
-  // Example
   class Node {
     constructor() {
       this.name = null;

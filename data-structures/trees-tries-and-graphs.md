@@ -28,7 +28,7 @@
 
   - Binary Tree Traversal
 
-    - In-Order Traversal
+    - `In-Order Traversal`
     ```
     const inOrderTraversal = (node) => {
       if (node !== null) {
@@ -39,7 +39,7 @@
     };
     ```
 
-    - Pre-Order Traversal
+    - `Pre-Order Traversal`
 
     ```
     const preOrderTraversal = (node) => {
@@ -51,7 +51,7 @@
     };
     ```
     
-    - Post-Order Traversal
+    - `Post-Order Traversal`
 
     ```
     const postOrderTraversal = (node) => {
@@ -65,15 +65,15 @@
   
 ### Binary Heaps (Min-Heaps and Max-Heaps)
 
-  A min-heap is an ascending complete binary tree (totally filled other than the rightmost elements on the last level) where each node is smaller than it's children. The root is the minimum element in the tree.
+  A `min-heap` is an ascending complete binary tree (totally filled other than the rightmost elements on the last level) where each node is smaller than it's children. The root is the minimum element in the tree.
 
-  - Insert
+  - `Insert`
   
     1. Insert element at the rightmost bottom.
     2. Fix the tree by swapping the new element with it's parent until we find an appropriate spot for the element (essentially bubbling up the minimum element).
   
   
-  - Extract Minimum Element
+  - `Extract Minimum Element`
   
     1. Get the minimum element (root node).
     2. Swap with last element (rightmost bottom element).
@@ -83,41 +83,41 @@
 
   A variant of an n-ary tree in which characters are stored at each node.
 
-  - Sometimes called a prefix tree.
-  - Each path dow nthe tree may represent a word.
+  - Sometimes called a `prefix tree`.
+  - Each path down the tree may represent a word.
   - `*` nodes (or null nodes) indicate complete words.
 
 ### Graphs
 
   A graph is simply a collection of nodes with edges between (some of) them.
 
-  - Can be directed (one-way) or undirected (two-way).
-  - If there is a path between every pair of vertices it is called a "connected graph".
-  - If there is no cycles it is an acyclic graph.
+  - Can be `directed` (one-way) or `undirected` (two-way).
+  - If there is a path between every pair of vertices it is called a `connected graph`.
+  - If there are no cycles it is an `acyclic graph`.
   - Common ways to represent a graph
 
-    - Adjacency List
+    - `Adjacency List`
 
-    Every vertex (or node) stores a list of adjacent vertices. 
-    In a unidirected graph, an edge like (a, b) would be stored twice: once in a's adjacent vertices and once in b's adjacent vertices.
+      - Every vertex (or node) stores a list of adjacent vertices. 
+      - In a unidirected graph, an edge like (a, b) would be stored twice: once in a's adjacent vertices and once in b's adjacent vertices.
 
-    - Adjacency Matrix
+    - `Adjacency Matrix`
 
-    An adjacency matrix is an NxN boolean matrix (where N is the number of nodes), where a true value at matrix[i][j] indicates an edge from node i to node j.
-    In a unidirected graph, an adjacency matrix with my symmetric.
+      - An adjacency matrix is an NxN boolean matrix (where N is the number of nodes), where a true value at matrix[i][j] indicates an edge from node i to node j.
+      - In a unidirected graph, an adjacency matrix with my symmetric.
 
 ### Graph Search
 
   Two most common ways to search a graph are:
 
-  - Depth-first search (DFS)
+  - `Depth-first search` (DFS)
 
     - DFS starts at the root (or another arbitrarily selected node) and then explores the current branch completely before moving on to the next branch.
     - Goes deep then wide.
     - Preferred when we want to visit every node in the graph (simpler).
     - Pre-order traversal is a form of DFS.
 
-  - Breadth-first search (BFS)
+  - `Breadth-first search` (BFS)
 
     - BFS starts at the root and then explores each neighbor before going on to any of their children.
     - Goes wide then deep.

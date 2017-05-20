@@ -124,7 +124,7 @@
     - Preferred if we want to find shortest path between nodes.
     - BFS is not recursive, it uses a queue.
 
-  - Bidirectional Search
+  - `Bidirectional Search`
 
     - Bidirectional search is used to find the shortest path between a source and destination node.
     - Runs two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.

@@ -17,28 +17,15 @@
 
   A binary tree is a tree in which each node has up to two children. A node without any children is called a `leaf` node.
 
-  - Binary Search Trees
+  - A `Binary Search Tree` is a tree in which every node fits a specific ordering property: `all left descendents <= n < all right descendents`
 
-      A binary search tree is a tree in which every node fits a specific ordering property: `all left descendents <= n < all right descendents`
+  - A binary tree is `balanced` if for any two leaves the difference of depth is at most 1. (eg. Red-Black Trees, AVL Trees)
 
-  - Balanced vs. Unbalanced
+  - A `Complete Binary Tree` is a tree in which every level of the tree is fully filled, except for the last level (left to right filled).
 
-    Balanced "enough" to ensure O(log n) times for insert and find, but not necessarily as balanced as it could be.
+  - A `Full Binary Tree` is a tree in which each node has either zero or two children. No nodes have only one child.
 
-      - Red-Black Trees
-      - AVL Trees
-
-  - Complete Binary Trees
-
-      A binary tree in which every level of the tree is fully filled, except for the last level (left to right filled).
-
-  - Full Binary Trees
-
-      A binary tree in which each node has either zero or two children. No nodes have only one child.
-
-  - Perfect Binary Trees
-
-      A binary tree that is both full and complete.
+  - A `Perfect Binary Tree` is a tree that is both full and complete.
 
   - Binary Tree Traversal
 

@@ -147,6 +147,11 @@
     - Bidirectional search is used to find the shortest path between a source and destination node.
     - Runs two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.
 
+### Topological Sort
+### Dijkstra's Algorithm
+### AVL Trees
+### Red-Black Trees
+
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)
   - [ ] [minimalTree](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex2.js)

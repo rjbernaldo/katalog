@@ -143,7 +143,23 @@
     - Uses a priority queue.
 
   - `AVL Trees`
+
+    - A kind of self balancing binary tree.
+    - The heights of two child subtrees of any node differ at most by one. If at any time they differ by more than one, rebalancing is done to restore this property.
+    - Lookup, insertion, and deletion all take O(log N)
+    - More strictly balanced than red-black trees.
+    - Named after Georgy `A`delson-`V`elsky and Evgenii `L`andis.
+
   - `Red-Black Trees`
+
+    - A kind of self balancing binary tree.
+    - Each node of the tree has one bit that indicates whether the node is `red` or `black`.
+    - Must follow a set of rules when performing actions to be able to maintain balance.
+
+  - `2-3-4 Trees`
+
+    - A kind of self balancing binary tree.
+    - Commonly used to implement dictionaries.
 
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)

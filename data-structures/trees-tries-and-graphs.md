@@ -114,19 +114,19 @@
 
     - DFS starts at the root (or another arbitrarily selected node) and then explores the current branch completely before moving on to the next branch.
     - Goes deep then wide.
-    - Preferred when we want to visit every node in the graph (simpler).
+    - Preferred when we want to visit every node in the graph.
     - Pre-order traversal is a form of DFS.
 
   - `Breadth-first search` (BFS)
 
     - BFS starts at the root and then explores each neighbor before going on to any of their children.
     - Goes wide then deep.
-    - Preferred if we want to find shortest path between nodes.
-    - BFS is not recursive, it uses a queue.
+    - Preferred if we want to find the shortest path between nodes.
+    - BFS is not recursive - it uses a queue.
 
   - `Bidirectional Search`
 
-    - Bidirectional search is used to find the shortest path between a source and destination node.
+    - Bidirectional search is used to find the shortest path between two nodes.
     - Runs two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.
 
 ### Topological Sort

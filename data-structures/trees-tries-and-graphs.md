@@ -129,10 +129,21 @@
     - Bidirectional search is used to find the shortest path between two nodes.
     - Runs two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.
 
-### Topological Sort
-### Dijkstra's Algorithm
-### AVL Trees
-### Red-Black Trees
+### Related
+
+  - `Topological Sort`
+
+    - Order the list of nodes in such that if `(a, b)` is an edge in the graph then `a` will appear before `b` in the list.
+    - Can only be done on directed graphs (no cycles).
+
+  - `Dijkstra's Algorithm`
+
+    - Find the shortest path between two points in a weighted directed graph (that may have cycles, all edges must have positive values).
+    - Find the minimum weight path from a start node `s` to `every` node on the graph.
+    - Uses a priority queue.
+
+  - `AVL Trees`
+  - `Red-Black Trees`
 
 ## Exercises
   - [ ] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)

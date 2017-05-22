@@ -14,6 +14,7 @@ const findKthToLast = (n, num) => {
     : Object.assign({}, current, { count: ++current.count });
 };
 
+/* TESTS */
 const head = new Node(0);
 for (let i = 0; i < 10; i += 1) {
   head.appendToTail(i);

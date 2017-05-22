@@ -44,7 +44,7 @@ const partition = (node, val) => {
   return firstLeft;
 };
 
-
+/* TESTS */
 const head = new Node(10);
 for (let i = 9; i > 0; i -= 1) {
   head.appendToTail(i);

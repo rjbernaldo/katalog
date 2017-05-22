@@ -19,6 +19,7 @@ const rotate90 = (matrix) => {
   return rotatedMatrix;
 };
 
+/* TESTS */
 console.log(rotate90([
   [0, 1, 2, 3],
   [0, 1, 2, 3],

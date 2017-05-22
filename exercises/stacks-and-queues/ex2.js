@@ -37,6 +37,7 @@ class CustomStack {
   }
 }
 
+/* TESTS */
 const stack = new CustomStack();
 stack.push(4);
 stack.push(3);

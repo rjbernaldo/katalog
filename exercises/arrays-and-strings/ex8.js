@@ -31,6 +31,7 @@ const bomberMan = (matrix) => {
   return currentMatrix;
 };
 
+/* TESTS */
 console.log(bomberMan([
   [1, 1, 1, 1],
   [1, 0, 1, 1],

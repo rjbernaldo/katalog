@@ -50,6 +50,7 @@ class AnimalShelter {
   }
 }
 
+/* TESTS */
 const animalShelter = new AnimalShelter();
 animalShelter.enqueue({ type: 'cat', name: 'cat1' });
 animalShelter.enqueue({ type: 'cat', name: 'cat2' });

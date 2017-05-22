@@ -24,6 +24,7 @@ const isPermutation = (a, b) => {
   return true;
 };
 
+/* TESTS */
 console.log(isPermutation('abc', 'bca'));
 console.log(isPermutation('abc', 'baa'));
 console.log(isPermutation('abc', 'bax'));

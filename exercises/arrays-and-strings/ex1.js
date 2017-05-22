@@ -18,5 +18,6 @@ const isUnique = (str) => {
   return true;
 };
 
+/* TESTS */
 console.log(isUnique('abcdefghijklm'));
 console.log(isUnique('abcdeafghijklm'));

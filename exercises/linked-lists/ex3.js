@@ -32,6 +32,7 @@ const deleteMiddleNode = (node) => {
   delete next;
 };
 
+/* TESTS */
 let del;
 const head = new Node(0);
 for (let i = 0; i < 10; i += 1) {

@@ -35,6 +35,7 @@ class MyQueue {
   }
 }
 
+/* TESTS */
 const queue = new MyQueue();
 queue.add(0);
 queue.add(1);

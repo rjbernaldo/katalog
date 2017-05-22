@@ -44,6 +44,7 @@ const sortStack = (s) => {
   return sortedStack;
 };
 
+/* TESTS */
 const stack = [1, 2, 3, 4, 5];
 const sortedStack = sortStack(stack);
 console.log(stack);

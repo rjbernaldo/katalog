@@ -27,7 +27,7 @@ const intersection = (n1, n2) => {
   return false;
 };
 
-
+/* TESTS */
 const n1 = new Node(1);
 const mid = n1.appendToTail('mid');
 n1.appendToTail(3);

@@ -33,4 +33,5 @@ const permutationPalindrome = (str) => {
   return oddCount === 1;
 };
 
+/* TESTS */
 console.log(permutationPalindrome('Tact Coa'));

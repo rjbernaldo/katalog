@@ -26,6 +26,7 @@ const palindrome = (head) => {
   return true;
 };
 
+/* TESTS */
 const head0 = new Node('a');
 head0.appendToTail('b');
 head0.appendToTail('b');

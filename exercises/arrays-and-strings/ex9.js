@@ -7,5 +7,6 @@
 // O(1) ?
 const isRotation = (s1, s2) => (s1 + s1).indexOf(s2) > -1;
 
+/* TESTS */
 console.log(isRotation('testing', 'ingtest'));
 console.log(isRotation('testing', 'ingtest2'));

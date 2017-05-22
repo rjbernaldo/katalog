@@ -35,6 +35,7 @@ const compressString = (str) => {
     : newStr;
 };
 
+/* TESTS */
 console.log(compressString('aabcccccaaa'));
 console.log(compressString('aabbccdd'));
 console.log(compressString('aaabbccdd'));

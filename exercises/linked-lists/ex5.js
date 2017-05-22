@@ -20,6 +20,7 @@ const sumListsRecursively = (n1, n2) => {
   return Object.assign({}, current, { sum, carry: val >= 10 ? 1 : 0 });
 };
 
+/* TESTS */
 const sumLists = (n1, n2) => {
   // TODO: pad linked lists
   return sumListsRecursively(n1, n2).sum;

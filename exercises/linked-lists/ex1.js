@@ -35,6 +35,7 @@ const removeDupsNoBuffer = (node) => {
   }
 };
 
+/* TESTS */
 const head = new Node(0);
 for (let i = 0; i < 10; i += 1) {
   head.appendToTail(i);

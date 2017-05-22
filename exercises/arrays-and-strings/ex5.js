@@ -28,6 +28,7 @@ const oneEditAway = (s1, s2) => {
   return true;
 };
 
+/* TESTS */
 console.log(oneEditAway('test', 'est'));
 console.log(oneEditAway('test', 'zest'));
 console.log(oneEditAway('est', 'zest'));

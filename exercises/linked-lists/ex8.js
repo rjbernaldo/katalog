@@ -15,6 +15,7 @@ const loopDetection = (head, cache = []) => {
   return loopDetection(head.next, cache);
 };
 
+/* TESTS */
 const n1 = new Node(1);
 n1.appendToTail(2);
 n1.appendToTail(3);

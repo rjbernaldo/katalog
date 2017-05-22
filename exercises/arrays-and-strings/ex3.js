@@ -17,4 +17,5 @@ const spacesToString = (str, len) => {
   return newStr.join('');
 };
 
+/* TESTS */
 console.log(spacesToString('a b   ', 3));

@@ -116,6 +116,7 @@
     - Goes deep then wide.
     - Preferred when we want to visit every node in the graph.
     - Pre-order traversal is a form of DFS.
+    - Simple - can be done easily with recursion.
 
   - `Breadth-first search` (BFS)
 

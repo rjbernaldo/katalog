@@ -11,23 +11,16 @@ class Node {
   }
 }
 
-const minimalTree = (arr) => {
-  const root = null;
+const minimalTree = (arr, start = 0, end = arr.length - 1) => {
+  if (end < start) return null;
 
-  for (let i = 0; i < arr.length; i++) {
-    const elem = arr[i];
+  const mid = Math.floor((start + end) / 2);
+  const node = new Node(arr[mid]);
+  node.left = minimalTree(arr, start, mid - 1);
+  node.right = minimalTree(arr, mid + 1, end);
 
-    if (root === null) {
-      root = new Node(elem);
-    } else {
-      insertAndBalance(root, elem);
-    }
-  }
+  return node;
 };
-
-function insertAndBalance(root, elem) {
-  // TODO:
-}
 
 /* TESTS */
 const arr = [1, 2, 3, 4, 5];

@@ -7,6 +7,7 @@ class Node {
   constructor(name) {
     this.name = name;
     this.children = [];
+    this.visited = false;
   }
 }
 
@@ -16,7 +17,7 @@ const routeBetweenNodes = (n1, n2) => {
 
     if (child === n2) {
       return true;
-    } else if (child.children.length > 0) {
+    } else if (child.children.length > 0 && child.visited === false) {
       const childResult = routeBetweenNodes(child, n2);
       if (childResult) return childResult;
     } else {

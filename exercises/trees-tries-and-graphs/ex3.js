@@ -8,11 +8,10 @@ const listOfDepthsDFS = (node, depth = 1) => {
 };
 
 const listOfDepthsBFS = (node) => {
-  let current = [];
   const results = [];
 
+  let current = [];
   current.push(node);
-
   while (current.length > 0) {
     results.push(current);
     const parents = current;

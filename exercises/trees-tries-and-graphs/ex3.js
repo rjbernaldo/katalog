@@ -4,7 +4,18 @@
 * have D linked lists)
 */
 
-const listOfDepthsDFS = (node, depth = 1) => {
+const listOfDepthsDFS = (node, list = [], depth = 0) => {
+  if (!Array.isArray(list[depth])) {
+    list[depth] = [];
+  }
+
+  list[depth].push(node.left);
+  list[depth].push(node.right);
+
+  listOfDepthsDFS(node.left, list, depth + 1);
+  listOfDepthsDFS(node.right, list, depth + 1);
+
+  return list;
 };
 
 const listOfDepthsBFS = (node) => {
@@ -12,6 +23,7 @@ const listOfDepthsBFS = (node) => {
 
   let current = [];
   current.push(node);
+
   while (current.length > 0) {
     results.push(current);
     const parents = current;
@@ -26,5 +38,3 @@ const listOfDepthsBFS = (node) => {
 
   return results;
 };
-
-listOfDepthsBFS([root]);

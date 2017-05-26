@@ -11,6 +11,7 @@ const listOfDepthsDFS = (node, lists = [], level = 0) => {
     lists.push([]);
   }
 
+  // pre-order traversal
   lists[level].push(node);
   listOfDepthsDFS(node.left, lists, level + 1);
   listOfDepthsDFS(node.right, lists, level + 1);

@@ -165,7 +165,7 @@
 ## Exercises
   - [x] [routeBetweenNodes](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex1.js)
   - [x] [minimalTree](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex2.js)
-  - [ ] [listOfDepths](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex3.js)
+  - [x] [listOfDepths](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex3.js)
   - [ ] [checkBalanced](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex4.js)
   - [ ] [validateBST](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex5.js)
   - [ ] [successor](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex6.js)

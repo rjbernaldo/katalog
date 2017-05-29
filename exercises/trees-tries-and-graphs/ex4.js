@@ -4,21 +4,18 @@
 * heights of the two subtrees of any node never differ by more than one.
 */
 
-const checkBalanced = (node) => {
-  if (node === null) return true;
-
-  const heightDiff = getHeight(node.left) - getHeight(node.right);
-
-  if (Math.abs(heightDiff) > 1) return false;
-
-  return checkBalanced(node.left) && checkBalanced(node.right);
-};
+const checkBalanced = node => getHeight(node) !== -1;
 
 function getHeight(node) {
   if (node === null) return -1;
 
-  return Math.max(
-    getHeight(node.left),
-    getHeight(node.right),
-  ) + 1;
+  const leftHeight = getHeight(node.left);
+  if (leftHeight === -1) return -1;
+
+  const rightHeight = getHeight(node.right);
+  if (rightHeight === -1) return -1;
+
+  if (Math.abs(leftHeight - rightHeight) > 1) return -1;
+
+  return Math.max(leftHeight, rightHeight) + 1;
 }

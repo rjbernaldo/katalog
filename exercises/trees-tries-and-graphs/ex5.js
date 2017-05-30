@@ -3,18 +3,9 @@
 */
 
 const validateBST = (node) => {
-  let leftNode = true;
-  let rightNode = true;
+  if (node === null) return true;
+  if (node.left !== null && node.left > node.value) return false;
+  if (node.right !== null && node.right <= node.value) return false;
 
-  if (node.left !== null) {
-    if (node.left >= node.value) return false;
-    leftNode = validateBST(node.left);
-  }
-
-  if (node.right !== null) {
-    if (node.right <= node.value) return false;
-    rightNode = validateBST(node.right);
-  }
-
-  return leftNode && rightNode;
+  return validateBST(node.left) && validateBST(node.right);
 };

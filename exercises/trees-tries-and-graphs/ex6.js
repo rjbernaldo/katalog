@@ -7,9 +7,10 @@
 const successor = (query, node) => {
   if (node === null) return false;
 
-  if (typeof node === 'undefined') node = query;
-  if (query.value < node.value) return node;
-  if (node.right === null) return successor(query, node.parent); // go up to parent
+  let current = node;
+  if (typeof current === 'undefined') current = query;
+  if (query.value < current.value) return current;
+  if (current.right === null) return successor(query, current.parent); // go up to parent
 
-  return successor(query, node.right); // go to right
+  return successor(query, current.right); // go to right
 };

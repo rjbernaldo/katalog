@@ -9,9 +9,12 @@ const successor = (query, node) => {
 
   let current = node;
   if (typeof current === 'undefined') current = query;
-  current.visited = true;
 
-  if (query.value < current.value) return current;
+  if (query.value < current.value) {
+    current.visited = true;
+    return current;
+  }
+
   if (current.right === null && !current.visited) {
     current.visited = true;
     return successor(query, current.parent); // go up to parent

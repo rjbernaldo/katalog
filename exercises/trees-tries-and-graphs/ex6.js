@@ -5,7 +5,7 @@
 */
 
 const successor = (query, node) => {
-  if (node === null) return false;
+  if (node === null) return null;
 
   let current = node;
   if (typeof current === 'undefined') current = query;

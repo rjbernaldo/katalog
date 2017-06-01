@@ -28,7 +28,7 @@ function isSatisfied(projects, deps) {
 }
 
 function swapProjects(projects, deps) {
-  let swappedProjects = projects;
+  const swappedProjects = projects;
 
   for (let i = 0; i < deps.length; i++) {
     const dep = deps[i];
@@ -36,19 +36,28 @@ function swapProjects(projects, deps) {
     const second = swappedProjects.indexOf(dep[1]);
 
     if (first > second) {
-      swappedProjects = [
-        ...projects.slice(0, second),
-        dep[0],
-        ...projects.slice(second + 1),
-      ];
-
-      swappedProjects = [
-        ...projects.slice(0, first),
-        dep[1],
-        ...projects.slice(first + 1),
-      ];
+      const temp = swappedProjects[first];
+      swappedProjects[first] = swappedProjects[second];
+      swappedProjects[second] = temp;
     }
   }
-
   return swappedProjects;
 }
+
+const a = 'a';
+const b = 'b';
+const c = 'c';
+const d = 'd';
+const e = 'e';
+
+const projects = [c, e, d, b, a];
+const deps = [
+  [d, e],
+  [c, d],
+  [a, b],
+  [b, c],
+];
+
+console.log(projects);
+console.log(deps);
+console.log(buildOrder(projects, deps));

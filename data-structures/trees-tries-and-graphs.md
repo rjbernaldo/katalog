@@ -168,7 +168,7 @@
   - [x] [listOfDepths](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex3.js)
   - [x] [checkBalanced](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex4.js)
   - [x] [validateBST](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex5.js)
-  - [ ] [successor](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex6.js)
+  - [x] [successor](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex6.js)
   - [ ] [buildOrder](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex7.js)
   - [ ] [firstCommonAncestor](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex8.js)
   - [ ] [bstSequences](https://github.com/rjbernaldo/katalog/blob/master/exercises/trees-tries-and-graphs/ex9.js)

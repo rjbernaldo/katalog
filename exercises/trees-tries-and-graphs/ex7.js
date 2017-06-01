@@ -4,6 +4,8 @@
 * project). All of a project's dependencies must be built before the project
 * is. Find a build order that will allow the projects to be built. If there is
 * no valid build order, return an error.
+*
+* TODO: Must use graph. (clue: Topological sort).
 */
 
 const buildOrder = (projects, deps) => {

@@ -25,3 +25,12 @@ function isSubtree(t1, t2) {
 
   return isSubtree(t1.left, t2.left) && (t1.right, t2.right);
 }
+
+const checkSubtreeSimple = (t1, t2) => {
+  return toString(t1).indexOf(toString(t2)) > -1;
+};
+
+function toString(node) {
+  if (node === null) return 'X';
+  return `${node.value}${toString(node.left)}${toString(node.right)}`;
+}

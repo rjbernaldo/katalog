@@ -5,3 +5,23 @@
 * subtree of n is identical to T2. That is, if you cut off the tree at node n,
 * the two trees would be identical.
 */
+
+const checkSubtree = (t1, t2) => {
+  const t1root = findNode(t1, t2);
+
+  return isSubtree(t1root, t2);
+};
+
+function findNode(tree, node) {
+  if (tree === null || node === null) return null;
+  if (tree === node) return tree;
+
+  return findNode(tree.left, node) || findNode(tree.right, node);
+}
+
+function isSubtree(t1, t2) {
+  if (t1 === null && t2 === null) return true;
+  if (t1 !== t2) return false;
+
+  return isSubtree(t1.left, t2.left) && (t1.right, t2.right);
+}

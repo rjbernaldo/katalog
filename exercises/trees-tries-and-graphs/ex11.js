@@ -11,7 +11,7 @@ class CustomBinaryTree {
     this.root = root;
   }
 
-  getRandomNode1(node = this.root, set = []) {
+  getRandomNode1(node = this.root) {
     if (node === null) return null;
 
     return [node]

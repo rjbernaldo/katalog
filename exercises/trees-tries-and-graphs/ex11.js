@@ -5,3 +5,18 @@
 * Design and implement an algorithm for getRandomNode, and explain how you
 * would implement the rest of the methods.
 */
+
+class CustomBinaryTree {
+  constructor(root) {
+    this.root = root;
+  }
+
+  getRandomNode1(node = this.root, set = []) {
+    if (node === null) return null;
+
+    return [node]
+      .concat(this.getRandomNode1(node.left))
+      .concat(this.getRandomNode1(node.right))
+      .filter(n => n !== null);
+  }
+}

@@ -29,3 +29,30 @@ function countPaths(node, sum, currentSum) {
 
   return total;
 }
+
+const optimizedPathsWithSum = (node, targetSum, runningSum, pathCount) => {
+  if (node === null) return 0;
+
+  const sum = (runningSum + node.data) - targetSum;
+  let totalPaths = pathCount[sum] || 0;
+  if (runningSum === targetSum) totalPaths += 1;
+
+  incrementCache(pathCount, runningSum, 1);
+  totalPaths += optimizedPathsWithSum(node.left, targetSum, runningSum, pathCount);
+  totalPaths += optimizedPathsWithSum(node.right, targetSum, runningSum, pathCount);
+  incrementCache(pathCount, runningSum, -1);
+
+  return totalPaths;
+};
+
+function incrementCache(pathCount, key, delta) {
+  const currentCount = pathCount[key] || 0;
+  const newCount = currentCount + delta;
+
+  let pc = pathCount;
+  if (newCount === 0) {
+    delete pc[key];
+  } else {
+    pc[key] = newCount;
+  }
+}

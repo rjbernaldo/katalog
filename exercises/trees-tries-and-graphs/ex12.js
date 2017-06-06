@@ -56,3 +56,24 @@ function incrementCache(pathCount, key, delta) {
     pc[key] = newCount;
   }
 }
+
+const contiguousSum = (arr, targetSum, cache = {}) => {
+  let total = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    let runningSum = 0;
+
+    for (let j = i + 1; j < arr.length; j++) {
+      runningSum += arr[i];
+      console.log(runningSum);
+      const currentTotal = cache[runningSum - targetSum] || 0;
+
+      if (runningSum === targetSum) total += 1;
+    }
+  }
+
+  return total;
+};
+
+const arr = [10, 5, 1, 2, -1, -1, 7, 1, 2];
+console.log(contiguousSum(arr, 8), contiguousSum(arr, 8) === 2);

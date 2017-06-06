@@ -49,7 +49,7 @@ function incrementCache(pathCount, key, delta) {
   const currentCount = pathCount[key] || 0;
   const newCount = currentCount + delta;
 
-  let pc = pathCount;
+  const pc = pathCount;
   if (newCount === 0) {
     delete pc[key];
   } else {

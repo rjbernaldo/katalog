@@ -57,23 +57,23 @@ function incrementCache(pathCount, key, delta) {
   }
 }
 
-const contiguousSum = (arr, targetSum, cache = {}) => {
+const contiguousSum = (arr, targetSum) => {
   let total = 0;
+  let runningSum = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    let runningSum = 0;
-
-    for (let j = i + 1; j < arr.length; j++) {
+    if (runningSum + arr[i] > targetSum) {
+      runningSum = 0;
+    } else if (runningSum + arr[i] === targetSum) {
+      total += 1;
+      runningSum = 0;
+    } else {
       runningSum += arr[i];
-      console.log(runningSum);
-      const currentTotal = cache[runningSum - targetSum] || 0;
-
-      if (runningSum === targetSum) total += 1;
     }
   }
 
   return total;
 };
 
-const arr = [10, 5, 1, 2, -1, -1, 7, 1, 2];
-console.log(contiguousSum(arr, 8), contiguousSum(arr, 8) === 2);
+const arr = [10, 5, 1, 2, 7, 1, 2];
+console.log(contiguousSum(arr, 8) === 2);

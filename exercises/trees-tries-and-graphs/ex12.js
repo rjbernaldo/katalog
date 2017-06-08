@@ -59,16 +59,26 @@ function incrementCache(pathCount, key, delta) {
 
 const contiguousSum = (arr, targetSum) => {
   let total = 0;
-  let runningSum = 0;
+  const clonedArr = arr;
+  const current = [];
+  current.push(clonedArr.shift());
 
-  for (let i = 0; i < arr.length; i++) {
-    if (runningSum + arr[i] > targetSum) {
-      runningSum = 0;
-    } else if (runningSum + arr[i] === targetSum) {
+  while (current.length > 0) {
+    const currentSum = current.reduce((a, b) => a + b, 0);
+
+    if (currentSum === targetSum) {
       total += 1;
-      runningSum = 0;
-    } else {
-      runningSum += arr[i];
+      current.shift();
+    }
+
+    if (currentSum > targetSum) {
+      current.shift();
+    }
+
+    console.log(current);
+
+    if (currentSum < targetSum) {
+      if (clonedArr.length) current.push(clonedArr.shift());
     }
   }
 
@@ -76,4 +86,5 @@ const contiguousSum = (arr, targetSum) => {
 };
 
 const arr = [10, 5, 1, 2, 7, 1, 2];
+console.log(contiguousSum(arr, 8));
 console.log(contiguousSum(arr, 8) === 2);
